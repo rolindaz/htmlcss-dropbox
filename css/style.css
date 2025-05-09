@@ -16,6 +16,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1910px;
 }
 
 :root {
@@ -32,7 +33,7 @@ img {
 }
 
 .container {
-    width: 80%;
+    width: 65%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -45,12 +46,12 @@ img {
     background-color: var(--db-brand);
     color: var(--db-light-primary);
     padding: 0.5rem 0.8rem;
+    border: none;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1rem;
 }
 
 .col {
@@ -65,6 +66,21 @@ img {
 
 .col-4 {
     width: calc(100% / 12 * 4);
+    flex-basis: auto;
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+    flex-basis: auto;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+    flex-basis: auto;
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
 }
 
 .col-9 {
@@ -81,6 +97,7 @@ img {
 
 header {
     min-height: 80px;
+    position: sticky;
     nav {
         justify-content: space-between;
         padding: 1.5rem;
@@ -96,14 +113,12 @@ header {
                     color: var(--db-dark-primary);
                     text-decoration: none;
                 }
-                &:hover {
+                :hover {
                     border-bottom: 3px solid var(--db-dark-primary);
                 }
             }
         }
     }
-    
-
 }
 
 /* #endregion Header */
@@ -111,6 +126,48 @@ header {
 
 
 /* #region Main */
+
+#jumbotron {
+    position: relative;
+    background-color: var(--db-jumbotron);
+    height: 555px;
+    .container {
+        height: 100%;
+        padding-top: 5.5rem;
+    }
+    h1 {
+        line-height: 4.5rem;
+        font-size: 3.5rem;
+    }
+    .row {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .col-4 {
+        font-size: 12px;
+        p {
+            padding-bottom: 1.5rem;
+        }
+        .btn {
+            margin-bottom: 1.5rem;
+        }
+        i {
+            position: absolute;
+            font-size: 40px;
+            color: var(--db-dark-primary);
+            bottom: 15px;
+
+        }
+    }
+    .col-8 {
+        position: relative;
+        img {
+            position: absolute;
+            right: -55px;
+        }
+    }
+
+}
 
 /* #endregion Main */
 
