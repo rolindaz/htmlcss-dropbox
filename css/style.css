@@ -80,10 +80,12 @@ img {
 /* #region Header */
 
 header {
+    min-height: 80px;
     nav {
         justify-content: space-between;
         padding: 1.5rem;
         align-items: center;
+        height: 100%;
 
         ul {
             align-items: center;
@@ -93,6 +95,9 @@ header {
                 a {
                     color: var(--db-dark-primary);
                     text-decoration: none;
+                }
+                &:hover {
+                    border-bottom: 3px solid var(--db-dark-primary);
                 }
             }
         }
