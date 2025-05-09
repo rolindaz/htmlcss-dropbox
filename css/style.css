@@ -1,0 +1,105 @@
+/* #region Debug */
+
+* {
+    border: 1px red dashed;
+}
+
+/* #endregion Debug */
+
+/* #region Utilities */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+--db-light-primary: white;
+--db-jumbotron: #b4d0e6;
+--db-dark-primary: black;
+--db-text-lighter: #979998;
+--db-brand: #0061fe;
+}
+
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+    padding: 1rem;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+header {
+    nav {
+        justify-content: space-between;
+
+        #menu-sx, 
+        #menu-rx {
+            justify-content: space-around;
+        }
+
+        ul {
+            font-weight: ;
+            list-style: none;
+        }
+    }
+    
+
+}
+
+/* #endregion Header */
+
+
+
+/* #region Main */
+
+/* #endregion Main */
+
+
+
+
+
+/* #region Footer */
+
+/* #endregion Footer */
