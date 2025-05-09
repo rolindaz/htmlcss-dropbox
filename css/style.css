@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -39,6 +39,12 @@ img {
 
 .d-flex {
     display: flex;
+}
+
+.btn {
+    background-color: var(--db-brand);
+    color: var(--db-light-primary);
+    padding: 0.5rem 0.8rem;
 }
 
 .row {
@@ -77,6 +83,7 @@ header {
     nav {
         justify-content: space-between;
         padding: 1.5rem;
+        align-items: center;
 
         ul {
             align-items: center;
