@@ -1,8 +1,8 @@
 /* #region Debug */
-
+/*
 * {
     border: 1px red dashed;
-}
+}*/
 
 /* #endregion Debug */
 
@@ -96,15 +96,16 @@ img {
 /* #region Header */
 
 header {
-    min-height: 80px;
+    min-height: 60px;
     position: sticky;
     nav {
         justify-content: space-between;
         padding: 1.5rem;
         align-items: center;
-        height: 100%;
 
         ul {
+            padding-left: 1rem;
+            font-size: 12px;
             align-items: center;
             list-style: none;
             li {
