@@ -26,7 +26,10 @@ body {
 --db-brand: #0061fe;
 }
 
-
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
 
 .container {
     width: 80%;
@@ -73,15 +76,18 @@ body {
 header {
     nav {
         justify-content: space-between;
-
-        #menu-sx, 
-        #menu-rx {
-            justify-content: space-around;
-        }
+        padding: 1.5rem;
 
         ul {
-            font-weight: ;
+            align-items: center;
             list-style: none;
+            li {
+                padding: 0 1rem;
+                a {
+                    color: var(--db-dark-primary);
+                    text-decoration: none;
+                }
+            }
         }
     }
     
