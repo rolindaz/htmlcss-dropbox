@@ -170,6 +170,41 @@ header {
 
 }
 
+#section1 {
+    padding-top: 8rem;
+    #business-plans {
+        h2 {
+            font-size: xx-large;
+            padding-bottom: 2rem;
+        }
+        .row {
+            padding-top: 2rem;
+            .col-4 {
+                border: 1px solid var(--db-text-lighter);
+                flex-direction: column;
+                font-size: 12px;
+                span {
+                    display: inline-block;
+                }
+                p, h3, b, span, ul {
+                    padding: 0.5rem 0.5rem 1rem 1rem;
+                }
+                p:first-child {
+                    text-align: center;
+                }
+                hr {
+                    color: var(--db-text-lighter);
+                }
+                i.fa-check {
+                    color: var(--db-brand);
+                }
+            }
+
+        }
+    }
+
+}
+
 /* #endregion Main */
 
 
