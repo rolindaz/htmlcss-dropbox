@@ -319,6 +319,25 @@ header {
     }
 }
 
+#section3 {
+    padding-top: 7rem;
+    .row {
+        padding-top: 4rem;
+        .col-4 {
+            padding: 1rem;
+        }
+        .card {
+            flex-direction: column;
+            * {
+                padding-bottom: 1.5rem;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 /* #endregion Main */
 
 
