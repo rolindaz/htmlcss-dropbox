@@ -17,6 +17,9 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1910px;
+    button, p, ul, span, a, strong {
+        font-size: 12px;
+    }
 }
 
 :root {
@@ -40,7 +43,7 @@ img {
 }
 
 .cont-main {
-    width: 55%;
+    width: 57%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -54,6 +57,23 @@ img {
     color: var(--db-light-primary);
     padding: 0.5rem 0.8rem;
     border: none;
+}
+
+.circle {
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    background-color: var(--db-light-primary);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.selected {
+    border: 5px solid var(--db-brand);
+}
+
+.plain {
+    border: 2px solid var(--db-text-lighter);
 }
 
 .row {
@@ -113,7 +133,6 @@ header {
 
         ul {
             padding-left: 1rem;
-            font-size: 12px;
             align-items: center;
             list-style: none;
             li {
@@ -153,7 +172,6 @@ header {
         padding-bottom: 1rem;
     }
     .col-4 {
-        font-size: 12px;
         p {
             padding-bottom: 1.5rem;
         }
@@ -179,15 +197,24 @@ header {
 }
 
 #section1 {
-    padding-top: 8rem;
+    padding-top: 12rem;
     #business-plans {
+        a {
+            text-decoration: none;
+            color: var(--db-dark-primary);
+        }
         h2 {
             font-size: xx-large;
-            padding-bottom: 2rem;
+            padding-bottom: 3rem;
+        }
+        #circle-pick {
+            width: 100%;
+            p {
+                padding-right: 3rem;
+            }
         }
         .row {
-            padding-top: 2rem;
-            font-size: 12px;
+            padding-top: 3rem;
             .col-4 {
                 border: 1px solid var(--db-light-secondary);
                 .plan-type {
@@ -272,10 +299,10 @@ header {
                     justify-content: space-between;
                     .price {
                         flex-direction: column;
-                        b, p {
+                        strong, p {
                             display: block;
                         }
-                        h3, b {
+                        h3, strong {
                             padding-bottom: 1rem;
                         }
                         h3 {
@@ -312,7 +339,6 @@ header {
         align-items: flex-start;
         p {
             display: block;
-            font-size: 12px;
         }
         * {
             padding-bottom: 1.5rem;
@@ -337,9 +363,6 @@ header {
             * {
                 padding-bottom: 1.5rem;
             }
-            p {
-                font-size: 12px;
-            }
         }
     }
 }
@@ -350,7 +373,6 @@ header {
     a {
         display: block;
         padding-top: 1.5rem;
-        font-size: 12px;
     }
 }
 
@@ -374,7 +396,6 @@ footer {
             }
             ul {
                 line-height: 1.5rem;
-                font-size: 12px;
                 list-style: none;
             }
             a {
