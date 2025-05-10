@@ -20,6 +20,9 @@ body {
     button, p, ul, span, a, strong {
         font-size: 12px;
     }
+    a:link {
+        color: var(--db-brand);
+    }
 }
 
 :root {
@@ -57,6 +60,11 @@ img {
     color: var(--db-light-primary);
     padding: 0.5rem 0.8rem;
     border: none;
+    &:hover {
+        background-color: var(--db-light-primary);
+        color: var(--db-brand);
+        border: 1px solid var(--db-brand);
+    }
 }
 
 .circle {
@@ -257,11 +265,6 @@ header {
                         span, hr {
                             margin: 2rem 0;
                         }
-                        span {
-                            a:link {
-                                color: var(--db-brand);
-                            }
-                        }
                         hr {
                             width: 20%;
                             height: 0px;
@@ -351,7 +354,11 @@ header {
         button {
             background-color: var(--db-light-primary);
             padding: 0.5rem 0.5rem;
-            border: 1px solid ;
+            border: 1px solid;
+            &:hover {
+                background-color: var(--db-dark-primary);
+                color: var(--db-light-primary);
+            }
         }
     }
 }
