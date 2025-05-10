@@ -39,6 +39,12 @@ img {
     margin: 0 auto;
 }
 
+.cont-main {
+    width: 55%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .d-flex {
     display: flex;
 }
@@ -355,5 +361,41 @@ header {
 
 
 /* #region Footer */
+
+footer {
+    background-color: var(--db-dark-primary);
+     #footer-content {
+        justify-content: space-between;
+        color: var(--db-light-primary);
+        padding: 4rem 0;
+        .footer-box {
+            h4 {
+                padding-bottom: 1.5rem;
+            }
+            ul {
+                line-height: 1.5rem;
+                font-size: 12px;
+                list-style: none;
+            }
+            a {
+                color: var(--db-light-primary);
+                text-decoration: none;
+            }
+        }
+    }
+
+    div:last-child {
+        padding-bottom: 3rem;
+        hr {
+            max-width: 10%;
+        }    }
+        span {
+            display: block;
+            padding-top: 2.5rem;
+            color: var(--db-text-lighter);
+            font-size: 11px;
+        }
+}
+
 
 /* #endregion Footer */
