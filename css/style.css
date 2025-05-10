@@ -181,10 +181,9 @@ header {
         }
         .row {
             padding-top: 2rem;
+            font-size: 12px;
             .col-4 {
-                flex-shrink: 1;
                 border: 1px solid var(--db-light-secondary);
-                font-size: 12px;
                 .plan-type {
                     justify-content: center;
                     border-bottom: 1px solid var(--db-light-secondary);
@@ -252,9 +251,45 @@ header {
                 
                 
             }
+            .col-12 {
+                border: 1px solid var(--db-light-secondary);
+                margin-top: 45px;
+                .plan-type {
+                    justify-content: center;
+                    border-bottom: 1px solid var(--db-light-secondary);
+                    p {
+                        padding: 0.5rem;
+                    }
+                }
+                .plan-details {
+                    padding: 2rem 2rem 1rem 2rem;
+                    justify-content: space-between;
+                    .price {
+                        flex-direction: column;
+                        b, p {
+                            display: block;
+                        }
+                        h3, b {
+                            padding-bottom: 1rem;
+                        }
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            padding-top: 1.5rem;
+                        }
+                    }
+                    .actions {
+                        flex-basis: 30%;
+                        text-align: end;
+                        .btn {
+                            padding: 0.5rem 1.2rem;
+                        }
+                    }
+                }
+            }
         }
     }
-
 }
 
 /* #endregion Main */
