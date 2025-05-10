@@ -292,6 +292,33 @@ header {
     }
 }
 
+#section2 {
+    padding-top: 10rem;
+    .col-7 {
+        img {
+            max-width: 93%;
+        }
+    }
+    .col-5 {
+        padding-top: 3rem;
+        padding-right: 7rem;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+            display: block;
+            font-size: 12px;
+        }
+        * {
+            padding-bottom: 1.5rem;
+        }
+        button {
+            background-color: var(--db-light-primary);
+            padding: 0.5rem 0.5rem;
+            border: 1px solid ;
+        }
+    }
+}
+
 /* #endregion Main */
 
 
