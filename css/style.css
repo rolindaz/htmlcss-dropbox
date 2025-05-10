@@ -43,7 +43,7 @@ img {
 }
 
 .cont-main {
-    width: 57%;
+    width: 58%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -93,7 +93,7 @@ img {
 }
 
 .col-4 {
-    width: calc((100% - 90px) / 12 * 4);
+    width: calc((100% - 70px) / 12 * 4);
     flex-basis: auto;
 }
 
@@ -199,13 +199,13 @@ header {
 #section1 {
     padding-top: 12rem;
     #business-plans {
-        a {
+        #anchor1 {
             text-decoration: none;
             color: var(--db-dark-primary);
-        }
-        h2 {
-            font-size: xx-large;
-            padding-bottom: 3rem;
+            h2 {
+                font-size: xx-large;
+                padding-bottom: 3rem;
+            }
         }
         #circle-pick {
             width: 100%;
@@ -225,7 +225,7 @@ header {
                     }
                 }
                 .plan-details {
-                    padding: 2rem 2rem;
+                    padding: 2rem 1.5rem;
                     flex-direction: column;
                     justify-content: space-around;
                     .price {
@@ -240,10 +240,15 @@ header {
                             color: var(--db-light-secondary);
                         }
                     }
-                    .icons {
+                    .assets {
                         padding-top: 2rem;
+                        padding-bottom: 2rem;
                         * {
                             padding-bottom: 0.7rem;
+                        }
+                        ul {
+                            text-align: start;
+                            margin-left: 1rem;
                         }
                     }
                     .actions {
