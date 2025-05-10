@@ -320,11 +320,11 @@ header {
 }
 
 #section3 {
-    padding-top: 7rem;
+    padding-top: 9rem;
     .row {
         padding-top: 4rem;
         .col-4 {
-            padding: 1rem;
+            padding: 1rem 1rem 1rem 0;
         }
         .card {
             flex-direction: column;
@@ -335,6 +335,16 @@ header {
                 font-size: 12px;
             }
         }
+    }
+}
+
+#section4 {
+    padding: 9rem 0 9rem;
+    line-height: 3rem;
+    a {
+        display: block;
+        padding-top: 1.5rem;
+        font-size: 12px;
     }
 }
 
