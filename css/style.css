@@ -24,6 +24,7 @@ body {
 --db-jumbotron: #b4d0e6;
 --db-dark-primary: black;
 --db-text-lighter: #979998;
+--db-light-secondary: #d2d2d6;
 --db-brand: #0061fe;
 }
 
@@ -178,26 +179,73 @@ header {
             padding-bottom: 2rem;
         }
         .row {
+
             padding-top: 2rem;
             .col-4 {
-                border: 1px solid var(--db-text-lighter);
-                flex-direction: column;
+
+                border: 1px solid var(--db-light-secondary);
                 font-size: 12px;
-                span {
-                    display: inline-block;
+                .plan-type {
+                    justify-content: center;
+                    border-bottom: 1px solid var(--db-light-secondary);
+                    p {
+                        padding: 0.5rem;
+                    }
                 }
-                p, h3, b, span, ul {
-                    padding: 0.5rem 0.5rem 1rem 1rem;
+                .plan-details {
+                    padding: 2rem 2rem;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .price {
+                        flex-direction: column;
+                        * {
+                            padding-bottom: 1rem;
+                        }
+                        h3 {
+                            font-size: 20px;
+                        }
+                        span {
+                            color: var(--db-light-secondary);
+                        }
+                    }
+                    .icons {
+                        padding-top: 2rem;
+                        * {
+                            padding-bottom: 0.7rem;
+                            line-height: 0.4rem;
+                        }
+                    }
+                    .actions {
+                        flex-direction: column;
+                        padding-top: 2rem;
+                        span, hr {
+                            margin: 2rem 0;
+                        }
+                        hr {
+                            width: 20%;
+                            height: 0px;
+                            border: none;
+                            border-top: 1px solid var(--db-light-secondary);
+                        }
+                    }
+                    .more-details {
+                        strong {
+                            display: block;
+                        }
+                        strong, ul {
+                            margin-top: 2rem;
+                        }
+                        li {
+                            margin-bottom: 1rem;
+                        }
+                        i.fa-check {
+                            color: var(--db-brand);
+                        }
+                    }
+                    
                 }
-                p:first-child {
-                    text-align: center;
-                }
-                hr {
-                    color: var(--db-text-lighter);
-                }
-                i.fa-check {
-                    color: var(--db-brand);
-                }
+                
+                
             }
 
         }
