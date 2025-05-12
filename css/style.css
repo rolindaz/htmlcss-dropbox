@@ -132,8 +132,10 @@ img {
 /* #region Header */
 
 header {
-    min-height: 60px;
     position: sticky;
+    top: 0;
+    background-color: var(--db-light-primary);
+    z-index: 10;
     nav {
         justify-content: space-between;
         padding: 1.5rem;
@@ -145,8 +147,10 @@ header {
             list-style: none;
             li {
                 padding: 0 1rem;
-                a {
+                a:link {
                     color: var(--db-dark-primary);
+                }
+                a {
                     text-decoration: none;
                 }
                 :hover {
