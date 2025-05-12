@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    .container {
+        border: 1px dashed red;
+    }
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 30%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+:root {
+    --db-light-primary: white;
+    --db-text-darker: #574F41;
+    --db-dark-primary: black;
+    --db-text-lighter: #979998;
+    --db-light-secondary: #E1E0DD;
+    --db-brand: #0061fe;
+    --db-google-brd: #DBDCDF;
+    --db-google-text: #3D4042;
+    --db-google-hover: #F8FAFF;
+    --db-google-hover-brd: #D5E2FA;
+    --db-apple-btn-brd: #c9c5bf;
+    --db-apple-text: #1D1919;
+    --db-apple-hover: #EBEBEB;
+    --db-apple-hover-brd: #C4BFB8;
+    --db-action-hover: #2356DD;
+    }
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--db-light-primary);
+    z-index: 10;
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 1px solid var(--db-text-lighter);
+    nav {
+        padding: 1.5rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+main {
+    .container {
+        padding: 5rem 0;
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 14px;
+        }
+        #google,
+        #apple {
+            margin-bottom: 1.5rem;
+        }
+        #google {
+            min-height: 43px;
+            padding: 0.5rem;
+            border: 1px solid var(--db-google-brd);
+            border-radius: 1vh;
+            background-color: var(--db-light-primary);
+            span {
+                i {
+                    font-size: 18px;
+                }
+                p {
+                    color: var(--db-google-text);
+                    display: block;
+                    flex-grow: 1;
+                    font-weight: bold;
+                }
+            }
+            &:hover {
+                border-color: var(--db-google-hover-brd);
+                background-color: var(--db-google-hover);
+            }
+        }
+        #apple {
+            padding: 0.5rem;
+            border: 1px solid var(--db-apple-btn-brd);
+            background-color: var(--db-light-primary);
+            span {
+                align-items: center;
+                i {
+                    font-size: 25px;
+                }
+                p {
+                    color: var(--db-apple-text);
+                    display: block;
+                    flex-grow: 1;
+                }
+            }
+            &:hover {
+                border-color: var(--db-apple-hover-brd);
+                background-color: var(--db-apple-hover);
+            }
+        }
+        #line-break {
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid var(--db-light-secondary);
+            line-height: 0.01rem;
+            margin: 2rem 0;
+            span {
+                background-color: var(--db-light-primary);
+                padding: 0 10px;
+            }
+        }
+        label {
+            display: block;
+            font-size: 11px;
+            color: var(--db-text-darker);
+            margin-bottom: 0.5rem;
+        }
+        input {
+            border: 1px solid var(--db-apple-btn-brd);
+            width: 100%;
+            min-height: 45px;
+            vertical-align: middle;
+            box-shadow: none;
+            &:hover {
+                border-color: var(--db-dark-primary);
+            }
+            margin-bottom: 2.5rem;
+        }
+        #action {
+            background-color: var(--db-brand);
+            color: var(--db-light-primary);
+            font-weight: bold;
+            font-size: 16px;
+            min-height: 45px;
+            border: 1px solid var(--db-brand);
+            border-radius: 3vh;
+            &:hover {
+                background-color: var(--db-action-hover);
+                border-color: var(--db-action-hover);
+            }
+        }
+    }
+}
