@@ -8,14 +8,14 @@
     <link rel="icon" href="../img/favicon.ico">
     <title>Accedi o registrati - Dropbox</title>
 </head>
-<body class="debug">
+<body>
     <header>
         <nav class="d-flex">
             <div>
                 <img src="../img/logo-small.png" alt="Logo Dropbox">
             </div>
             <div>
-                <span><i class="fa-solid fa-globe"></i></span>
+                <span><a href="#popup"><i class="fa-solid fa-globe"></i></a></span>
             </div>
         </nav>
     </header>
@@ -39,98 +39,145 @@
             <input type="email" id="email" value="">
             <button id="action">Continua</button>
         </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>Scegli una lingua:</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li><a href="#">Bahasa Indonesia</a></li>
+                            <li><a href="#">Bahasa Malaysia</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">English (United Kingdom)</a></li>
+                            <li><a href="#">English (United States)</a></li>
+                            <li><a href="#">Español (España)</a></li>
+                            <li><a href="#">Español (Latinoamérica)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <ul>
+                            <li><a href="#">Français (Canada)</a></li>
+                            <li><a href="#">Français (France)</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Nederlands</a></li>
+                            <li><a href="#">Norsk (bokmål)</a></li>
+                            <li><a href="#">Polski</a></li>
+                            <li><a href="#">Português (Brasil)</a></li>
+                            <li><a href="#">Pусский</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li><a href="#">Svenska</a></li>
+                            <li><a href="#">Українська</a></li>
+                            <li><a href="#">ไทย</a></li>
+                            <li><a href="#">中文（简体）</a></li>
+                            <li><a href="#">中文（繁體）</a></li>
+                            <li><a href="#">日本語</a></li>
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close">
+                    <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="d-flex">
-            <div>
-                <h4>Dropbox</h4>
-                <ul>
-                    <li><a href="#">Applicazione desktop</a></li>
-                    <li><a href="#">App mobile</a></li>
-                    <li><a href="#">Integrazioni</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Soluzioni</a></li>
-                    <li><a href="#">Sicurezza</a></li>
-                    <li><a href="#">Accesso anticipato</a></li>
-                    <li><a href="#">Modelli</a></li>
-                    <li><a href="#">Strumenti gratuiti</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Prodotti</h4>
-                <ul>
-                    <li><a href="#">Plus</a></li>
-                    <li><a href="#">Professional</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Enterprise</a></li>
-                    <li><a href="#">Dash</a></li>
-                    <li><a href="#">Reclaim.ai</a></li>
-                    <li><a href="#">Dropbox Sign</a></li>
-                    <li><a href="#">DocSend</a></li>
-                    <li><a href="#">Piani</a></li>
-                    <li><a href="#">Aggiornamento del prodotto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Funzioni</h4>
-                <ul>
-                    <li><a href="#">Invia file di grandi dimensioni</a></li>
-                    <li><a href="#">Invia video lunghi</a></li>
-                    <li><a href="#">Archiviazione di foto sul cloud</a></li>
-                    <li><a href="#">Trasferimenti sicuri dei file</a></li>
-                    <li><a href="#">Gestore delle password</a></li>
-                    <li><a href="#">Backup su cloud</a></li>
-                    <li><a href="#">Modifica file PDF</a></li>
-                    <li><a href="#">Firme elettroniche</a></li>
-                    <li><a href="#">Converti in PDF</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Supporto</h4>
-                <ul>
-                    <li><a href="#">Centro assistenza</a></li>
-                    <li><a href="#">Contattaci</a></li>
-                    <li><a href="#">Privacy e Termini</a></li>
-                    <li><a href="#">Norme sui cookie</a></li>
-                    <li><a href="#">Preferenze cookie e CCPA</a></li>
-                    <li><a href="#">Principi sull'intelligenza artificiale</a></li>
-                    <li><a href="#">Mappa del sito</a></li>
-                    <li><a href="#">Risorse di informazione</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Risorse</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Storie di clienti</a></li>
-                    <li><a href="#">Libreria delle risorse</a></li>
-                    <li><a href="#">Sviluppatori</a></li>
-                    <li><a href="#">Forum della community</a></li>
-                    <li><a href="#">Referral</a></li>
-                    <li><a href="#">Partner rivenditori</a></li>
-                    <li><a href="#">Partner di integrazione</a></li>
-                    <li><a href="#">Trova un partner</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Azienda</h4>
-                <ul>
-                    <li><a href="#">Informazioni su Dropbox</a></li>
-                    <li><a href="#">Lavora con noi</a></li>
-                    <li><a href="#">Relazioni con gli investitori</a></li>
-                    <li><a href="#">Il nostro impatto</a></li>
-                </ul>
-            </div>
-            <div>
-                <i></i>
-                <i></i>
-                <i></i>
-                <hr>
-                <span>
-                    <i class="fa-solid fa-earth-americas"></i> 
-                    Italiano 
-                    <i class="fa-solid fa-caret-up"></i>
-                </span>
+        <div id="footer-box">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Dropbox</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">App mobile</a></li>
+                        <li><a href="#">Integrazioni</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                        <li><a href="#">Soluzioni</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Accesso anticipato</a></li>
+                        <li><a href="#">Modelli</a></li>
+                        <li><a href="#">Strumenti gratuiti</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Prodotti</h3>
+                    <ul>
+                        <li><a href="#">Plus</a></li>
+                        <li><a href="#">Professional</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Dash</a></li>
+                        <li><a href="#">Reclaim.ai</a></li>
+                        <li><a href="#">Dropbox Sign</a></li>
+                        <li><a href="#">DocSend</a></li>
+                        <li><a href="#">Piani</a></li>
+                        <li><a href="#">Aggiornamento del prodotto</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Funzioni</h3>
+                    <ul>
+                        <li><a href="#">Invia file di grandi dimensioni</a></li>
+                        <li><a href="#">Invia video lunghi</a></li>
+                        <li><a href="#">Archiviazione di foto sul cloud</a></li>
+                        <li><a href="#">Trasferimenti sicuri dei file</a></li>
+                        <li><a href="#">Gestore delle password</a></li>
+                        <li><a href="#">Backup su cloud</a></li>
+                        <li><a href="#">Modifica file PDF</a></li>
+                        <li><a href="#">Firme elettroniche</a></li>
+                        <li><a href="#">Converti in PDF</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Supporto</h3>
+                    <ul>
+                        <li><a href="#">Centro assistenza</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">Privacy e Termini</a></li>
+                        <li><a href="#">Norme sui cookie</a></li>
+                        <li><a href="#">Preferenze cookie e CCPA</a></li>
+                        <li><a href="#">Principi sull'intelligenza artificiale</a></li>
+                        <li><a href="#">Mappa del sito</a></li>
+                        <li><a href="#">Risorse di informazione</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Risorse</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Storie di clienti</a></li>
+                        <li><a href="#">Libreria delle risorse</a></li>
+                        <li><a href="#">Sviluppatori</a></li>
+                        <li><a href="#">Forum della community</a></li>
+                        <li><a href="#">Referral</a></li>
+                        <li><a href="#">Partner rivenditori</a></li>
+                        <li><a href="#">Partner di integrazione</a></li>
+                        <li><a href="#">Trova un partner</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Azienda</h3>
+                    <ul>
+                        <li><a href="#">Informazioni su Dropbox</a></li>
+                        <li><a href="#">Lavora con noi</a></li>
+                        <li><a href="#">Relazioni con gli investitori</a></li>
+                        <li><a href="#">Il nostro impatto</a></li>
+                    </ul>
+                </div>
+                <div id="bottom">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <hr>
+                    <span>
+                        <i class="fa-solid fa-globe"></i> 
+                        <a href="#popup">Italiano</a>
+                        <i class="fa-solid fa-angle-right"></i>                    
+                    </span>
+                </div>
             </div>
         </div>
     </footer>
